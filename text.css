@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital@1&family=Noto+Sans+KR&family=Pacifico&display=swap");
+
+body {
+  background: #212121;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  text-align: center;
+  margin: 1vh 1vw 1vh 1vw;
+  max-width: auto;
+  max-height: auto;
+}
+
+#KR {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+    0 0 35px #ff00de, 0 0 40px #5900ff, 0 0 50px #0084ff, 0 0 75px #00a2ff;
+  animation: gradientAnimation 10s ease infinite;
+  padding: 16px;
+  margin: 0;
+}
+
+svg path.linear-1 {
+  stroke: white;
+  filter: url(#blur-filter);
+}
+
+.loading {
+  width: 100%;
+  max-width: 80vw;
+  margin: 2vh auto;
+  padding: 5px;
+  position: relative;
+}
+
+.loading svg {
+  height: 100%;
+}
+
+.loading .linear-1 {
+  stroke-dasharray: 281;
+  animation: dash 6s infinite linear forwards;
+}
+
+.loading .linear-2 {
+  stroke-dasharray: 300;
+  animation: dash 5s infinite linear forwards;
+}
+
+.loading .linear-3 {
+  stroke-dasharray: 340;
+  animation: dash 4s infinite linear forwards;
+}
+
+.loading .linear-4 {
+  stroke-dasharray: 400;
+  animation: dash 3s infinite linear forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 814;
+  }
+  to {
+    stroke-dashoffset: -814;
+  }
+}
+
+h1 {
+  text-shadow: 2px 2px 5px #e21393, 3px 3px 5px #2810af;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+    0 0 35px #ff00de, 0 0 40px #5900ff;
+  animation: gradientAnimation 30s ease infinite;
+  padding: 10px 0 10px 0;
+  margin: 0;
+}
+
+h3 {
+  color: #d80000a8;
+  text-shadow: 2px 2px 6px #af0000b0, 2px 2px 8px #99036cd5;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: right;
+  margin: 2vh 1vw 10vh 0;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f97dc4;
+}
+
+p {
+  color: #b500da;
+  text-shadow: 0 0 4px #7e00008a, 2px 2px 4px #af000075, 3px 3px 5px #99036cb4;
+  line-height: 1.3;
+  font-family: "Exo 2", sans-serif;
+  font-size: 16px;
+}
+
+p:hover {
+  color: #d400ff;
+  text-shadow: 0 0 6px #7e0000b2, 2px 2px 6px #af00008e, 3px 3px 8px #b4017eb4;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+}
